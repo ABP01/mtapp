@@ -18,5 +18,5 @@ export function LogoMobile() {
       </a>
     );
   }
-  
+   
 export default Logo
