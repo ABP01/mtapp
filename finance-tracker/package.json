@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
-    "prepare": "npm install && next build"
+    "prepare": "next build",
+    "postinstall": "echo 'Skipping Prisma generate' || true", 
+    "generate": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.2.3",
