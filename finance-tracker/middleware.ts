@@ -5,6 +5,9 @@ import { authMiddleware } from "@clerk/nextjs/server";
 export default authMiddleware({
   // Allow signed out users to access the specified routes:
   // publicRoutes: ['/anyone-can-visit-this-route'],
+  publicRoutes: ['/','/sign-in', '/sign-in/SignIn_clerk_catchall_check_1726304425093'],
+  publishableKey: 'pk_test_ZW5hYmxpbmctd3Jlbi02NC5jbGVyay5hY2NvdW50cy5kZXYk',
+  secretKey: process.env.CLERK_ENCRYPTION_KEY,
 });
 
 export const config = {
